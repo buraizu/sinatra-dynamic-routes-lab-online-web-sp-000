@@ -31,7 +31,7 @@ class App < Sinatra::Base
     @num2 = params[:number2]
     @result = nil
     if @operation == 'add'
-      @result = @num1 + @num2 
+      @result = @num1 + @num2
     elsif @operation == 'multiply'
       @result = @num1 * @num2
     elsif @operation == 'subtract'
@@ -39,8 +39,9 @@ class App < Sinatra::Base
     elsif @operation == 'divide'
       @result = @num1 / @num2
     end
+    binding.pry
     "#{@result}"
-      
+
   end
 
 end
